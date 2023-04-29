@@ -60,13 +60,13 @@ function submitDetails() {
       errorEl.classList.add('hidden');
       passwordMismatchedEl.classList.add('hidden');
       invalidemailEl.classList.add('hidden');
-      setLocalStorageRedirectToProfile(name, email, password);  
+      setLS_redirectProfile(name, email, password);  
     }
   }
 }
 
 
-function setItemInLocalStorage(usersArray, accessToken) {
+function setItemIn_LS(usersArray, accessToken) {
   localStorage.setItem('users', JSON.stringify(usersArray)); 
   localStorage.setItem('state', '1');
   // set the accessToken for this user
@@ -84,14 +84,14 @@ profilePageNav.addEventListener('click', () => {
 })
 
 
-function setLocalStorageRedirectToProfile(name, email, password) {
+function setLS_redirectProfile(name, email, password) {
   let accessToken = `${Math.random().toString(26).slice(2)}${Math.random().toString(26).slice(2, 6)}`; 
   userObj.name = name;
   userObj.email = email;
   userObj.password = password;
   usersArray.push(userObj);
   // set userdetails in local storage
-  setItemInLocalStorage(usersArray, accessToken)  
+  setItemIn_LS(usersArray, accessToken)  
   // set input deatails array as empty
   // redirect user to the profile page
   location.href = './profile.html';

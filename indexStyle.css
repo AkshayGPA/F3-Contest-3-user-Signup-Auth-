@@ -73,7 +73,7 @@ h2 {
 
 ::placeholder {
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 1; 
 }
 
 hr {
