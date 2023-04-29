@@ -13,19 +13,27 @@
     <ul id="flexbox">
       <li class="flex-left">Header</li>
       <li class="flex-right">
-        <a href="index.html">Signup</a>
+        <a href="#">Signup</a>
       </li>
       <li class="flex-right">
-        <a href="profile.html">Profile</a>
+        <a href="#">Profile</a>
       </li>
     </ul>
   </nav>
 
   <p class="profile" id="profile-details">Profile</p>
-  <p class="profile" id="profile-name">Full Name :</p>
-  <p class="profile" id="profile-email">Email :</p>
-  <p class="profile" id="profile-password">Password :</p>
+  <p class="profile" id="profile-name">Full Name :
+    <span id="disp-name"></span>
+  </p>
+  <p class="profile" id="profile-email">Email :
+    <span id="disp-email"></span>
+  </p>
+  <p class="profile" id="profile-password">Password :
+    <span id="disp-password"></span>
+  </p>
 
-  <button id="logout-btn">Logout</button>
+  <button id="logout-btn" onclick="logOut()">Logout</button>
+
+  <script src="profileJS.js"></script>
 </body>
 </html>

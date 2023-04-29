@@ -13,10 +13,10 @@
     <ul id="flexbox">
       <li class="flex-left">Header</li>
       <li class="flex-right">
-        <a href="index.html">Signup</a>
+        <a href="#" id="signUp">Signup</a>
       </li>
       <li class="flex-right">
-        <a href="profile.html">Profile</a>
+        <a href="#" id="profile">Profile</a>
       </li>
     </ul>
   </nav>
@@ -28,18 +28,36 @@
     </label>
     <hr class="bottom-border">
     <label for="email" class="labels">
-      <input type="text" id="email" class="left" placeholder="Email" required>
+      <input type="email" id="email" class="left" placeholder="Email" required>
     </label>
     <hr class="bottom-border">
     <label for="password" class="labels">
-      <input type="text" id="password" class="left" placeholder="Password" required>
+      <input type="password" id="password" class="left" placeholder="Password" required>
     </label>
     <hr class="bottom-border">
     <label for="confirmPassword" class="labels">
-      <input type="text" id="confirmPassword" class="left" placeholder="Confirm Password" required>
+      <input type="password" id="confirmPassword" class="left" placeholder="Confirm Password" required>
     </label>
     <hr class="bottom-border">
-    <button type="submit" id="submit-btn">Signup</button>
+
+    <div class="alert">
+      <div class="hidden" id="success" style="color: green;">
+        Congratulations Successfully Signed Up🎉🎉🎉🎉🎉!!!!
+      </div>
+      <div class="hidden" id="error" style="color: red;">
+        Error: ⚠️⚠️⚠️ All fields are mandatory ❌❌❌
+      </div>
+      <div class="hidden" id="passwordMismatched" style="color: red;">
+        Error: ⚠️⚠️⚠️ Password not Matching. Please enter correct password ❌❌❌
+      </div>
+      <div class="hidden" id="invalidEmail" style="color: red;">
+        Error: ⚠️⚠️⚠️ Invalid email id. Please enter correct email id ❌❌❌
+      </div>
+    </div>
+
+    <input type="submit" value="Signup" id="submit-btn">
   </div>
+
+  <script src="indexJS.js"></script>
 </body>
 </html>

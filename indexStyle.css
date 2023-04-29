@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #252422;
+  background-color: #151514;
   color: white;
 }
 
@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
   padding: 1rem;
   justify-content: flex-end;
-  background-color: #252422;
+  background-color: #151514;
   list-style: none;
 }
 
@@ -43,17 +43,17 @@ nav{
 }
 
 #form {
-  width: 75rem;
+  width: 50rem;
   height: 40rem;
   padding: 0.5rem;
-  margin: 240px auto;
+  margin: 5rem auto;
 }
 
 h2 {
   display: block;
   font-size: 4rem;
   font-weight: 300;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
 }
 
 .labels {
@@ -66,7 +66,7 @@ h2 {
   margin: 2px 0;
   padding: 0.2rem 0;
   border: none;
-  background-color: #252422;
+  background-color: #151514;
   color: white;
   font-size: 1.5rem;
 }
@@ -82,11 +82,25 @@ hr {
   margin-top: -1rem;
 }
 
+.hidden {
+  display: none;
+}
+
+.alert {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}
+
+.alert div {
+  margin-top: 0.5rem;
+}
+
 #submit-btn {
   display: block;
   width: 10rem;
   font-size: 1.5rem;
   padding: 0.3rem 0rem;
-  margin-top: 7rem;
+  margin-top: 3rem;
   margin-left: 0.2rem;
 }
